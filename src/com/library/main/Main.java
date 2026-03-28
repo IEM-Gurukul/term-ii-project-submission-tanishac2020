@@ -50,7 +50,7 @@ public class Main {
                     break;
 
                 case 5:
-                    System.out.println("Exiting...");
+                    System.out.println("Thank you for using the system!");
                     return;
 
                 default:
