@@ -1,5 +1,5 @@
 package com.library.main;
-// Book entity class
+
 public class Book {
     private int id;
     private String title;
