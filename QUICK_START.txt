@@ -1,0 +1,116 @@
+LIBRARY MANAGEMENT SYSTEM - QUICK START GUIDE
+==============================================
+
+PROJECT STRUCTURE:
+------------------
+src/
+├── com/
+│   └── library/
+│       ├── model/
+│       │   ├── Book.java
+│       │   └── Member.java
+│       ├── service/
+│       │   └── LibraryManager.java
+│       └── main/
+│           └── Main.java
+
+STEP 1: COMPILE THE PROJECT
+---------------------------
+From the project root directory (term-ii-project-submission-tanishac2020):
+
+Option A - Using PowerShell:
+  javac -d bin src/com/library/model/*.java src/com/library/service/*.java src/com/library/main/*.java
+
+Option B - From src directory:
+  cd src
+  javac -d ..\bin com/library/model/*.java com/library/service/*.java com/library/main/*.java
+  cd ..
+
+STEP 2: RUN THE APPLICATION
+----------------------------
+From the project root directory:
+
+  java -cp bin com.library.main.Main
+
+EXPECTED OUTPUT:
+----------------
+The application will start with:
+- Welcome banner
+- Sample data initialization (5 books, 3 members)
+- Menu-driven interface
+
+MAIN MENU OPTIONS:
+------------------
+1.  Add Book              - Add a new book to the library
+2.  Update Book           - Update book details
+3.  Delete Book           - Remove a book from the library
+4.  Search by Title       - Find books by title keyword
+5.  Search by Author      - Find books by author name
+6.  Search by ID          - Find specific book by ID
+7.  Available Books       - View all available books
+8.  All Books             - View all books with status
+9.  Issue Book            - Issue book to a member
+10. Return Book           - Return book from a member
+11. Add Member            - Register a new member
+12. All Members           - View all registered members
+13. Statistics            - View library statistics
+0.  Exit                  - Close the application
+
+FEATURES IMPLEMENTED:
+---------------------
+✓ Add, Update, Delete Books
+✓ Search Books (Title, Author, ID)
+✓ Issue Books with Availability Checks
+✓ Return Books with Validation
+✓ Member Management
+✓ Library Statistics
+✓ Exception Handling
+✓ Input Validation
+✓ Formatted Console Output
+
+OOP CONCEPTS:
+-------------
+✓ Encapsulation - Private fields, Public getters/setters
+✓ Abstraction    - Service layer hiding implementation details
+✓ Polymorphism   - Method overriding and overloading
+✓ Single Responsibility - Each class has one clear purpose
+
+SAMPLE DATA ON STARTUP:
+-----------------------
+Books:
+1. Java Programming by Herbert Schildt
+2. Effective Java by Joshua Bloch
+3. Clean Code by Robert C. Martin
+4. Design Patterns by Gang of Four
+5. The Pragmatic Programmer by Andrew Hunt
+
+Members:
+1. John Doe
+2. Jane Smith
+3. Alice Johnson
+
+TROUBLESHOOTING:
+----------------
+1. "javac is not recognized":
+   - Make sure Java JDK is installed
+   - Add Java bin folder to PATH environment variable
+   - Restart command prompt/PowerShell
+
+2. "Class not found" error when running:
+   - Check that bin directory has been created with .class files
+   - Verify classpath is correct: -cp bin
+
+3. "Package not found" error during compilation:
+   - Check that folder structure matches the package structure
+   - Run javac from the project root directory
+
+4. Error during menu input:
+   - Enter numeric values only for ID and menu choices
+   - Enter text strings when prompted for book titles, authors, or names
+
+For detailed documentation, see LIBRARY_MANAGEMENT_SYSTEM.md
+
+=====================================
+Project Status: Complete and Ready to Use
+Java Version Required: 8 or higher
+Date: March 2026
