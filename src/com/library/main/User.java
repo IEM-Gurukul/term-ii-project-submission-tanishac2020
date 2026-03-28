@@ -1,5 +1,5 @@
 package com.library.main;
-
+// User entity class
 public class User {
     private int userId;
     private String name;
