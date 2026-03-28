@@ -12,6 +12,7 @@ public class Library {
     }
 
     public void showBooks() {
+        System.out.println("---- Book List ----");
         if (books.isEmpty()) {
             System.out.println("No books available.");
             return;
