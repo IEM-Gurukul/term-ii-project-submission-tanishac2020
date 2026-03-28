@@ -2,6 +2,7 @@ package com.library.main;
 
 import java.util.ArrayList;
 
+// Library entity class
 public class Library {
     private ArrayList<Book> books = new ArrayList<>();
 
