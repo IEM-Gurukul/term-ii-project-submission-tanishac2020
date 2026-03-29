@@ -13,27 +13,19 @@ public class Book {
         this.isIssued = false;
     }
 
-    public int getId() {
-        return id;
-    }
+    public int getId() { return id; }
+    public String getTitle() { return title; }
+    public String getAuthor() { return author; }
+    public boolean isIssued() { return isIssued; }
 
-    public String getTitle() {
-        return title;
-    }
+    public void setTitle(String title) { this.title = title; }
+    public void setAuthor(String author) { this.author = author; }
 
-    public boolean isIssued() {
-        return isIssued;
-    }
-
-    public void issueBook() {
-        isIssued = true;
-    }
-
-    public void returnBook() {
-        isIssued = false;
-    }
+    public void issueBook() { isIssued = true; }
+    public void returnBook() { isIssued = false; }
 
     public void display() {
-        System.out.println(id + " | " + title + " | " + author + " | Issued: " + isIssued);
+        System.out.println(id + " | " + title + " | " + author +
+                " | " + (isIssued ? "Issued" : "Available"));
     }
 }
